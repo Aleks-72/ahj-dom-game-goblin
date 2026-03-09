@@ -6,14 +6,11 @@ export default class Page {
     generateHeader() {
         let  header  = document.createElement("header")
         header.textContent = "Goblin Killer Game"
-        // header.classList.add("header")
-        this._element.appendChild(header)
-        console.log("finish header")
+        this._element.append(header)
     }
 
     generateMain() {
         let main = document.createElement("main")
-        this._element.appendChild(main)
-        console.log("finish main")
+        this._element.append(main)
     }
 }

@@ -10,9 +10,9 @@ export default class Field {
         while (n>0) {
             let box = document.createElement("div")
             box.classList.add("field-box")
-            gameField.appendChild(box)
+            gameField.append(box)
             n = n-1
         }
-        this._element.appendChild(gameField)
+        this._element.append(gameField)
     }
 }
