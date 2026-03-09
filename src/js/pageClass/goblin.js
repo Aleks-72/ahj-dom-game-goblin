@@ -1,4 +1,5 @@
 import image from '../../pic/goblin.png'
+
 export default class Goblin {
     constructor(element) {
         this._element = element
@@ -9,12 +10,5 @@ export default class Goblin {
         goblin.src = image
         goblin.classList.add("goblin")
         this._element.append(goblin)
-    }
-
-    deleteGoblin() {
-        let goblin = document.querySelector("img")
-        if (goblin) {
-            goblin.remove()
-        }
     }
 }
